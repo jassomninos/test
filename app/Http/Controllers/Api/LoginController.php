@@ -95,7 +95,7 @@ class LoginController extends Controller
         $ins['password'] = bcrypt('admin');
         $insert = User::create($ins);
         if(!empty($insert)){
-
+            echo "yes";
         }
         return response()->json(['error' => 'Please try after some time'], 401);
 
